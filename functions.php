@@ -1,4 +1,5 @@
 <?php 
+session_start();
 
 function paswGen(): string{
     $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZO123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
