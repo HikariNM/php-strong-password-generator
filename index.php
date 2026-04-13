@@ -27,6 +27,24 @@ if (isset($_GET['psw'])){
         <div class="mb-3">
             <label for="psw" class="form-label">Choose password length</label>
             <input type="number" name="psw" class="form-control">
+            <div class="form-check pt-2">
+                <input class="form-check-input" type="checkbox" value="" id="numbers" name="numbers">
+                <label class="form-check-label" for="checkDefault">
+                    Numbers
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="symbols" name="symbols">
+                <label class="form-check-label" for="checkDefault">
+                    Symbols
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="capital" name="capital">
+                <label class="form-check-label" for="checkDefault">
+                    Capital Letters
+                </label>
+            </div>
         </div>
         <div class="d-grid">
             <button type="submit" class="btn btn-primary">Generate</button>
