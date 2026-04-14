@@ -12,7 +12,7 @@ session_start();
 
 </head>
 <body class="bg-light d-flex align-items-center justify-content-center vh-100">
-<div class="card shadow p-4 text-center bg-success-subtle" style="width: 400px;">
+<div class="card shadow p-4 text-center" >
     <h1 class="card-title mb-4">This is your password</h1>
 
         <p><?php echo htmlspecialchars($_SESSION['password']) ?></p>

@@ -20,14 +20,18 @@ if (isset($_GET['psw'])){
 
 </head>
 <body class="bg-light d-flex align-items-center justify-content-center vh-100">
-<div class="card text-white bg-secondary p-4" style="width: 400px;">
-    <h3 class="card-title text-center mb-4">Password Generator</h3>
-
+<div class="d-flex flex-column align-items-center gap-3">
+    
     <form action="" method="get">
-        <div class="mb-3">
-            <label for="psw" class="form-label">Choose password length</label>
-            <input type="number" name="psw" class="form-control">
-            <div class="form-check pt-2">
+        <div class="d-flex align-items-center gap-2 mb-3">
+            <h3 class="mb-0 pe-3">Password Generator</h3>
+                <!-- <label for="psw" class="form-label">Choose password length</label> -->        
+                <input type="number" name="psw" class="form-control" placeholder="Choose password length" style="width: 200px">
+                <button type="submit" class="btn btn-primary">Generate</button>
+        
+        </div>
+        <div class="d-flex gap-4 justify-content-center">
+            <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="numbers" name="numbers">
                 <label class="form-check-label" for="checkDefault">
                     Numbers
@@ -46,11 +50,8 @@ if (isset($_GET['psw'])){
                 </label>
             </div>
         </div>
-        <div class="d-grid">
-            <button type="submit" class="btn btn-primary">Generate</button>
-        </div>
     </form>
-        
-</div>
+</div>       
+
 </body>
 </html>
